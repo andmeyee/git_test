@@ -1,3 +1,3 @@
 # Some TODOs
 
-* find out how to merge commits
+* [x] find out how to merge commits

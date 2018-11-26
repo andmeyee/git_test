@@ -25,8 +25,9 @@ git branch -d master
 Create new master branch without history and commit it
 
 ```shell
-git checkout --orphan master
-git commit -a
+git checkout -b master <SHA from initial commit>
+git merge --squash <branch>
+git commit -m "your merge message"
 ```
 
 Push new master
@@ -55,7 +56,7 @@ git push github_origin master
 
 ```shell
 git checkout master
-git merge --squash --allow-unrelated-histories <feature branch>
-git commit
+git merge --squash <feature branch>
+git commit -m "your message"
 ```
 
